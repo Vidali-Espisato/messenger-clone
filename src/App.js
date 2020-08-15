@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import { Button, Input, FormControl, InputLabel } from "@material-ui/core";
 import "./App.css";
+import Message from "./Message";
 
 function App() {
   const [input, setInput] = useState("");
@@ -15,16 +17,25 @@ function App() {
   return (
     <div className="App">
       <form>
-        <input
-          value={input}
-          onChange={(event) => setInput(event.target.value)}
-        />
-        <button type="submit" onClick={sendMessage}>
-          Touch me
-        </button>
+        <FormControl>
+          <InputLabel>Type here...</InputLabel>
+          <Input
+            value={input}
+            onChange={(event) => setInput(event.target.value)}
+          />
+          <Button
+            disabled={!input}
+            variant="contained"
+            color="primary"
+            type="submit"
+            onClick={sendMessage}
+          >
+            Touch me
+          </Button>
+        </FormControl>
       </form>
       {messages.map((message) => (
-        <p>{message}</p>
+        <Message text={message} />
       ))}
     </div>
   );
