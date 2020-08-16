@@ -1,5 +1,16 @@
-/* .App {
+.App {
   text-align: center;
-  background-color: #000000;
-  min-height: 100vh;
-} */
+}
+.app__form {
+  position: fixed;
+  bottom: 0;
+  margin: 20px;
+  width: 100%;
+  z-index: 2;
+  background-color: #cccccc;
+}
+
+.app__formControl {
+  display: flex !important;
+  flex-direction: row !important;
+}
