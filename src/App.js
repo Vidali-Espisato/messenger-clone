@@ -9,6 +9,7 @@ function App() {
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([]);
   const [username, setUsername] = useState("");
+
   const sendMessage = (event) => {
     event.preventDefault();
     db.collection("messages").add({
