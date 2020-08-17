@@ -16,10 +16,14 @@
   background-color: rgb(28, 43, 129) !important;
   color: whitesmoke !important;
   box-shadow: 5px 5px 6px #777777 !important;
+  border-bottom-left-radius: 30px !important;
+  border-top-right-radius: 30px !important;
 }
 
 .message__guestCard {
   background-color: rgb(185, 30, 30) !important;
   color: whitesmoke !important;
   box-shadow: -5px 5px 6px #777777 !important;
+  border-bottom-right-radius: 30px !important;
+  border-top-left-radius: 30px !important;
 }

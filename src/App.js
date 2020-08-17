@@ -42,6 +42,7 @@ function App() {
         <FormControl className="app__formControl">
           <InputLabel>Type here...</InputLabel>
           <Input
+            className="app__input"
             value={input}
             color="secondary"
             onChange={(event) => setInput(event.target.value)}
